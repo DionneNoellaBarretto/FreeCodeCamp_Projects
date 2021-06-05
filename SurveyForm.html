@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurveyForm</title>
+</head>
+  <header> 
+    <h1 id="title"> SurveyFormTitle </h1> 
+    <p id="description"> ShortExplanation in "p" sized text </p>
+    </header> 
+<body>
+  <form id="survey-form">
+    <fieldset>
+      <p>Redio Button Exercise: Select a maintenance drone-</p>
+ <label for="huey">Huey</label>
+      <input type="radio" id="huey" name="drone" value="huey" checked>
+        <label for="dewey">Dewey</label>
+      <input type="radio" id="dewey" name="drone" value="dewey">
+      <label for="louie">Louie</label>
+      <input type="radio" id="louie" name="drone" value="louie">
+    </fieldset>
+    <fieldset>
+      <label id="name-label" for="name"> Name:</label>
+  <input type="text" id="name" name="name" minlength="3" required placeholder="Enter a 3 letter name atleast"> <br><br>
+    <label id="email-label" for="email"> Email:</label>
+  <input type="email" id="email" name="email" pattern=".+@domain.com" size="30" placeholder="Enter a valid email address" required> <br><br>
+    <label id="number-label" for="number"> Number:</label>
+  <input type="number" id="number" name="number" pattern="\d*" placeholder="Enter a valid number between 1 to 100000" min="1" max="100000" > <br><br>
+    <label for="dropdown"> Dropdown Options:</label>
+    <select name="cars" id="dropdown">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> <br><br>
+      </fieldset>
+    <fieldset> <p> CheckBox Option</p>
+      <label for="ales">Ales</label>
+    <input type="checkbox" id="ales" value="beer" name="ales"> <br> <br>
+    <label for="sales">Sales</label>
+    <input type="checkbox" id="sales" value="mercedes" name="sales"> <br> <br>
+      <label for="scales">Scales</label>
+    <input type="checkbox" id="scales" value="meter" name="scales" checked> <br> <br>
+    </fieldset>
+    <label id="comment">Additional Comments:</label>
+  <textarea id="comment" name="Additional Comments" rows="5" cols="192" placeholder="Enter any additional comments"> </textarea> <br> <br>
+<input type="submit" value="Submit" id="submit"> 
+  </form>
+</body>
+</html>
